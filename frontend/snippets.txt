@@ -1,0 +1,35 @@
+{
+	"console.log": {
+		"prefix": "clg",
+		"body": [
+			"console.log(\"$1\")",
+		],
+		"description": "useEffect function template"
+	},
+	"React Functional Component": {
+		"prefix": "rfc",
+		"body": [
+			"const ${TM_FILENAME_BASE} = () => {",
+			"  $1",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE};"
+		],
+		"description": "Create a React functional component"
+	},
+	"React Functional Component with Props": {
+		"prefix": "rfcp",
+		"body": [
+			"type Props = {",
+			"  $1",
+			"}",
+			"",
+			"const ${TM_FILENAME_BASE} = ({$2}: Props) => {",
+			"  $3",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE};"
+		],
+		"description": "Create a React functional component with props"
+	}
+}
